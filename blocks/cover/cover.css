@@ -1,15 +1,16 @@
 .cover {
+  box-sizing: border-box;
   background-image: url(../../images/cover-trains.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1184px;
+  max-width: calc(100% - 48px*2);
   margin: 0 auto;
 }
 
 .cover__link {
   display: block;
-  padding: 245px 312px;
+  padding: 245px 0;
   color: #fff;
   text-decoration: none;
   background-color: rgba(42, 44, 47, 0.3);
@@ -24,8 +25,8 @@
 
 .cover__title {
   max-width: 560px;
-  margin: 0 0 32px 0;
-  padding: 0;
+  margin: 0 auto;
+  padding-bottom: 32px;
   font-weight: 900;
   font-size: 72px;
   line-height: 1.06;
@@ -40,4 +41,20 @@
   font-size: 18px;
   line-height: 1.22;
   text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .cover {
+    max-width: 100%;
+  }
+
+  .cover__link {
+    padding: 195px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__link {
+    padding: 115px 0;
+  }
 }

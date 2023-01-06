@@ -9,7 +9,7 @@
 }
 
 .intro__title {
-  max-width: 690px;
+  width: 100%;
   margin: 0;
   font-weight: 900;
   font-size: 54px;
@@ -17,13 +17,14 @@
 }
 
 .intro__text {
+  width: 100%;
   margin: 40px 0 33px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.63;
 }
 .intro__list {
-  max-width: 690px;
+  width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -34,4 +35,41 @@
 
 .intro__list_number {
   font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  .intro__container {
+    margin: 0 286px 0 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    padding-top: 88px;
+  }
+
+  .intro__container {
+    max-width: 720px;
+    margin: 0 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .intro {
+    padding-top: 64px;
+  }
+
+  .intro__container {
+    max-width: 288px;
+    margin: 0 16px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+  
+  .intro__text {
+    margin-bottom: 34px;
+  }
 }
