@@ -5,6 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   max-width: calc(100% - 48px*2);
+  aspect-ratio: 8/5;
   margin: 0 auto;
 }
 

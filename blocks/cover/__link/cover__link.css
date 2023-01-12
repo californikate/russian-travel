@@ -1,5 +1,7 @@
 .cover__link {
   display: block;
+  aspect-ratio: 8/5;
+  box-sizing: border-box;
   padding: 245px 0;
   color: #fff;
   text-decoration: none;
